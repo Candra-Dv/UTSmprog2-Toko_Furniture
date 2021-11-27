@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbottom"
+    app:startDestination="@id/fragmentMenu">
+
+    <fragment
+        android:id="@+id/fragmentMenu"
+        android:name="com.example.utsmprog2_tokofurniture.FragmentMenu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/fragmentWishlist"
+        android:name="com.example.utsmprog2_tokofurniture.FragmentWishlist"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+    <fragment
+        android:id="@+id/fragmentTransaksi"
+        android:name="com.example.utsmprog2_tokofurniture.FragmentTransaksi"
+        android:label="fragment_transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+    <fragment
+        android:id="@+id/fragmentAkun"
+        android:name="com.example.utsmprog2_tokofurniture.FragmentAkun"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" />
+</navigation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentMenu"
+        android:title="Home"
+        android:icon="@drawable/outline_home"/>
+    <item
+        android:id="@+id/fragmentWishlist"
+        android:title="Wishlist"
+        android:icon="@drawable/outline_favorite"/>
+    <item
+        android:id="@+id/fragmentTransaksi"
+        android:title="Transaksi"
+        android:icon="@drawable/outline_receipt"/>
+    <item
+        android:id="@+id/fragmentAkun"
+        android:title="Akun"
+        android:icon="@drawable/outline_person"/>
+</menu>

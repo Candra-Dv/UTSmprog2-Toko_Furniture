@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP">
+
+    <LinearLayout
+        android:id="@+id/headerp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ic_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headerp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:orientation="vertical"
+        android:theme="@style/TextLabel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:textSize="40dp"
+            android:layout_marginStart="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan kode yang telah dikirimkan ke kontak anda "
+            android:textSize="20dp"
+            android:layout_marginStart="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="27dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:hint="."
+                android:textSize="50dp"
+                android:inputType="number"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:layout_marginStart="10dp"
+                android:hint="."
+                android:textSize="50dp"
+                android:inputType="number"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:layout_marginStart="10dp"
+                android:hint="."
+                android:textSize="50dp"
+                android:inputType="number"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/kotak"
+                android:layout_marginStart="10dp"
+                android:hint="."
+                android:textSize="50dp"
+                android:inputType="number"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:text="Lanjutkan"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kirim ulang OTP Code"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/headerp2"
+        android:background="@drawable/layer2"
+        android:gravity="bottom" />
+
+
+</RelativeLayout>

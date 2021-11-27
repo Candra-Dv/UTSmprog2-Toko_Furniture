@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    tools:context=".FragmentMenu">
+
+    <LinearLayout
+        android:id="@+id/h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hai, Candra"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/ic_notif"/>
+
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_shop"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/h2"
+        android:paddingStart="20dp"
+        android:hint="Cari Furniture"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:textColor="@color/abu2"/>
+
+    <RelativeLayout
+        android:id="@+id/h3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/header">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollhori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/abu">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu2"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/abu">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/menu1"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+       </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollhori2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollhori">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="45dp"
+                    android:text="semua"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/kuning"
+                    android:background="@drawable/kotak2"/>
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Sofa"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/kotak"/>
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Lemari"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/kotak"/>
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Meja"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/kotak"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="30dp"
+                    android:text="Rak"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/kotak"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txpopuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Populer"
+            android:layout_below="@id/scrollhori2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20sp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txpopuler">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
+
+                <LinearLayout
+                    android:id="@+id/menu1"
+                    android:layout_width="165dp"
+                    android:layout_height="215dp"
+                    android:background="@drawable/menu_kt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/kursi_ic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kursi Sofa"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RP 1.200.000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu2"
+                    android:layout_width="165dp"
+                    android:layout_height="215dp"
+                    android:layout_toEndOf="@id/menu1"
+                    android:layout_marginStart="20sp"
+                    android:background="@drawable/menu_kt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/lemari_2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lemari Pakaian"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RP 1.800.000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu3"
+                    android:layout_width="165dp"
+                    android:layout_height="215dp"
+                    android:layout_below="@id/menu1"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/menu_kt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/meja_kopi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meja Minimalist"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RP 500.000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menu4"
+                    android:layout_width="165dp"
+                    android:layout_height="215dp"
+                    android:layout_toEndOf="@id/menu3"
+                    android:layout_below="@id/menu2"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:background="@drawable/menu_kt"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/meja_ic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meja TV"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RP 900.000"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="15dp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

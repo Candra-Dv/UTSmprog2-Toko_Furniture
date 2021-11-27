@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentWishlist">
+
+    <LinearLayout
+        android:id="@+id/w1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/kuning"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:hint="Cari Wishlist"
+            android:textColor="@color/abu2"
+            android:paddingStart="20sp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_notif"/>
+
+        <Button
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_shop"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Barang Wishlist"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_below="@id/w1"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txw"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/menu_kt">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sofa_ic2"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sofa Minimalist"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:layout_below="@id/imageView"/>
+
+        <TextView
+            android:id="@+id/hrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 1.300.000"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/txt"/>
+
+        <Button
+            android:id="@+id/del"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20sp"
+            android:layout_below="@id/hrg"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/del"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:text="+ keranjang"
+            android:textAlignment="center"
+            android:textColor="@color/kuning"
+            android:layout_below="@id/hrg"
+            android:background="@drawable/kotak2"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

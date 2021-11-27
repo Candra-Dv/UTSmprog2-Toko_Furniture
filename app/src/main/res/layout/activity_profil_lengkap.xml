@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilLengkap">
+
+    <LinearLayout
+        android:id="@+id/headerp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ic_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headerp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:orientation="vertical"
+        android:theme="@style/TextLabel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil Lengkap"
+            android:textSize="40dp"
+            android:layout_marginStart="30sp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukan Nama Lengkap">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txnml"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:textSize="20dp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukan Nomor Telepon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtlp"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:textSize="20dp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Masukan Alamat">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txalamat"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:textSize="20dp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_cn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:text="Lanjutkan"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah punya akun?"
+                android:layout_marginTop="35dp"
+                android:textSize="20sp"
+                android:layout_marginStart="60dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="35dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerp2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layer2"
+        android:gravity="bottom" />
+
+</RelativeLayout>
