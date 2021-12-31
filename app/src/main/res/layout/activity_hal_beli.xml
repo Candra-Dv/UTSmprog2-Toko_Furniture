@@ -4,13 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/themawhite"
     tools:context=".HalBeli">
+
+    <LinearLayout
+        android:id="@+id/w1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_back"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Beli Sekarang"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/alamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/w1"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="15dp"
@@ -78,7 +106,7 @@
         android:id="@+id/kursi"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:layout_marginStart="25dp"
         android:layout_below="@id/alamat"
         android:background="@drawable/menu_kt"
@@ -88,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/kursi"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="35dp"
         android:layout_marginStart="25dp"
         android:layout_below="@id/alamat"
         android:orientation="vertical">
@@ -104,11 +132,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kursi Sofa"
+            android:text="1 barang"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="20dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -120,6 +147,105 @@
 
     </LinearLayout>
 
-    
+    <LinearLayout
+        android:id="@+id/pengiriman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kursi"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_kt">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/ic_mobil"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Pilih Pengiriman"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_chevron"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voucher"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/pengiriman"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_kt">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:hint="Masukan Code Promo"
+            android:textStyle="bold"
+            android:textColor="@color/abu2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@id/voucher">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Rp1.200.000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/total"
+        android:background="@drawable/button"
+        android:text="Pembayaran"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
 </RelativeLayout>

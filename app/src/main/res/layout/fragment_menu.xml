@@ -7,35 +7,44 @@
     android:background="@color/kuning"
     tools:context=".FragmentMenu">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/h2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginTop="25dp"
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hai, Candra"
-            android:textSize="30dp"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/button2"
             android:layout_width="40sp"
             android:layout_height="40sp"
-            android:layout_marginStart="120dp"
-            android:background="@drawable/ic_notif"/>
+            android:background="@drawable/ic_notif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/button3"
             android:layout_width="40sp"
             android:layout_height="40sp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/ic_shop"/>
+            android:background="@drawable/ic_shop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
         android:id="@+id/search"
@@ -78,6 +87,55 @@
                     android:layout_marginStart="30dp"
                     android:background="@drawable/button"
                     android:backgroundTint="@color/abu">
+
+                    <TextView
+                        android:id="@+id/diskon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Diskon"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sampai"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/diskon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="70"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginStart="10dp"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="55dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
                         android:layout_width="200dp"

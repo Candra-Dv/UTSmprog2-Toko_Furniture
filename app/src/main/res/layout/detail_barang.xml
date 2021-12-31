@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/kursi"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:background="@drawable/header2"
         android:orientation="vertical">
 
@@ -157,15 +157,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            android:background="@drawable/buttom">
+            android:background="@drawable/buttom"
+            android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_beli"
                 android:layout_width="170dp"
                 android:layout_height="55dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="15dp"
-                android:layout_gravity="center"
                 android:background="@drawable/kotak2"
                 android:text="Beli Sekarang"
                 android:textColor="@color/black"
@@ -175,9 +176,9 @@
             <Button
                 android:layout_width="170dp"
                 android:layout_height="55dp"
+                android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="15dp"
-                android:layout_gravity="center"
                 android:background="@drawable/button"
                 android:text="+ Keranjang"
                 android:textColor="@color/white"
