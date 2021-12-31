@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Login">
 
     <LinearLayout
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="45dp"
+            android:textColor="@color/black"
             android:layout_marginTop="35dp"
             android:layout_marginStart="30sp"/>
 
@@ -38,12 +40,13 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="30dp"
-            android:hint="Email">
+            android:hint="Email"
+            app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txemail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="62dp"
                 android:textSize="20dp"
                 android:inputType="text" />
 
@@ -57,13 +60,17 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:hint="Password"
-            app:endIconMode="password_toggle">
+            app:startIconDrawable="@drawable/ic_lock"
+            app:endIconMode="password_toggle"
+            app:boxStrokeColor="@color/abu2"
+            app:hintTextColor="@color/abu2">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txpassword"
                 android:layout_width="match_parent"
                 android:layout_height="62dp"
                 android:textSize="20dp"
+                android:imeOptions="actionDone"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -83,22 +90,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Belum punya akun?"
                 android:layout_marginTop="35dp"
-                android:textSize="20sp"
-                android:layout_marginStart="60dp"/>
+                android:textSize="20sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/txdaftar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daftar"
                 android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
                 android:textSize="20sp"/>
 
         </LinearLayout>
@@ -107,10 +116,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/header2"
-        android:layout_marginTop="95dp"
-        android:background="@drawable/layer2"
-        android:gravity="bottom" />
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layer2"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

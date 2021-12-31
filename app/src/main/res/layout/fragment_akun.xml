@@ -32,6 +32,7 @@
         android:layout_below="@id/nametx"
         android:background="@drawable/header"
         android:orientation="vertical"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="25dp">
 
         <LinearLayout
@@ -112,14 +113,6 @@
 
         </LinearLayout>
 
-
-
-
     </LinearLayout>
-
-
-
-
-
 
 </RelativeLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SignUp">
 
     <LinearLayout
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Daftar"
             android:textSize="45dp"
+            android:textColor="@color/black"
             android:layout_marginStart="30sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -37,6 +39,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="30dp"
+            app:startIconDrawable="@drawable/ic_email"
             android:hint="Masukan Email">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -56,6 +59,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:hint="Masukan Password"
+            app:startIconDrawable="@drawable/ic_lock"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +78,10 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
-            android:hint="Konfirmasi password">
+            app:startIconDrawable="@drawable/ic_lock"
+            android:hint="Konfirmasi password"
+            app:boxStrokeColor="@color/abu2"
+            app:hintTextColor="@color/abu2">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txcfpassword"
@@ -100,22 +107,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sudah punya akun?"
                 android:layout_marginTop="35dp"
-                android:textSize="20sp"
-                android:layout_marginStart="60dp"/>
+                android:textSize="20sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/txlogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:layout_marginTop="35dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
                 android:textSize="20sp"/>
 
         </LinearLayout>
@@ -124,10 +133,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/header2"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/layer2"
-        android:gravity="bottom" />
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layer2"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

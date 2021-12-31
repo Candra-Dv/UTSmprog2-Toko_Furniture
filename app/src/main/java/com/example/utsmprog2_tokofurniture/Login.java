@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -15,7 +16,7 @@ public class Login extends AppCompatActivity {
 
     TextInputEditText email, password;
     Button login;
-    EditText daftar;
+    TextView daftar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class Login extends AppCompatActivity {
         password = findViewById(R.id.txpassword);
         login = findViewById(R.id.btn_login);
         daftar = findViewById(R.id.txdaftar);
+
 
         login.setOnClickListener(v -> {
             String usernameKey = email.getText().toString().trim();
@@ -47,6 +49,7 @@ public class Login extends AppCompatActivity {
             Intent in = new Intent(this, SignUp.class);
             startActivity(in);
         });
+
 
     }
 }
